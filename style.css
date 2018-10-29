@@ -1,10 +1,53 @@
 html {
-  box-sizing: border-box;
-  	padding: 0;
-	margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
+.converted {
+    width: 100%;
+    display: block;
+}
+
+.converted tbody {
+    overflow-x: scroll;
+}
+
+.converted tbody tr {
+    display: inline-block;
+    min-width: 20%;
+}
+
+.converted tbody td {
+    width: 100%;
+    display: block;
+}
+
+.converted tbody tr:first-child {
+    display: inline-block;
+}
+
+.converted thead,
+.converted tbody {
+    float: left;
+}
+
+.converted thead {
+    float: left;
+    width: 20%;
+}
+
+.converted tbody {
+    float: left;
+    width: 80%;
+    white-space: nowrap;
+}
+
+.converted thead th {
+    float: left;
+    clear: both;
+}
